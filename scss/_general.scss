@@ -14,3 +14,30 @@ img{
 h1,h2,h3,h4,h5,h6 p{
     margin: 0;
 }
+
+a{
+    text-decoration: none;
+}
+
+ol, ul, li{
+    list-style-type: none;
+}
+
+button{
+    width: 217px;
+    padding: 16px 31px;
+    background: #0E8784;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover{
+        background: #66D2CF;
+    }
+}
