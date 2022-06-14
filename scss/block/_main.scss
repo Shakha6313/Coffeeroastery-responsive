@@ -402,29 +402,24 @@
     &__list1 {
         background: #0E8784;
         border-radius: 8px;
-        padding-top: 128px;
         width: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 72px;
         padding-bottom: 48px;
         margin-right: 15px;
         margin-left: 15px;
-        
-        &::before{
-            content: url(./../../img/coffee-granulas.svg);
-            width: 72px;
-            height: 72px;
-            object-fit: contain;
-            position: absolute;
-            transform: translateY(-56px);
-        }
     }
     
+    &__list-img1{
+        margin-left: 90px;
+    }
+
     &__list2 {
         background: #0E8784;
         border-radius: 8px;
-        padding-top: 128px;
+        padding-top: 72px;
         width: 350px;
         display: flex;
         flex-direction: column;
@@ -432,21 +427,12 @@
         padding-bottom: 48px;
         margin-right: 15px;
         margin-left: 15px;
-        
-        &::before{
-            content: url(./../img/present-box.svg);
-            width: 72px;
-            height: 72px;
-            object-fit: contain;
-            position: absolute;
-            transform: translateY(-56px);
-        }
     }
     
     &__list3 {
         background: #0E8784;
         border-radius: 8px;
-        padding-top: 128px;
+        padding-top: 72px;
         width: 350px;
         display: flex;
         flex-direction: column;
@@ -454,15 +440,6 @@
         padding-bottom: 48px;
         margin-right: 15px;
         margin-left: 15px;
-        
-        &::before{
-            content: url(./../img/delivery-van.svg);
-            width: 72px;
-            height: 72px;
-            object-fit: contain;
-            position: absolute;
-            transform: translateY(-56px);
-        }
     }
     
     &__list-heading {
@@ -489,26 +466,64 @@
     
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     /*  Tablet version  */
 
     .choice{
-        max-width: 688px;
         width: 100%;
+        padding: 0;
+        margin: 0;
 
-
-        &__lis1{
-
+        &__heading{
+            width: 264px;
+            font-size: 32px;
+            line-height: 48px;
+            padding-top: 71px;
         }
 
-        &__lis2{
+        &__text{
+            width: 540px;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 70px;
+        }
+
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+  
+        &__list1{
             width: 573px;
+            padding: 0px;
+        }
+        
+        &__list-info{
+            width: 455px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        &__lis3{
-            width: 573px;
+        &__list-img1{
+            margin-left: 0px;
         }
-    }    
 
+        &__info-text{
+            padding: 0;
+            margin: 0;
+        }
+        &__list-heading{
+            padding: 0px;
+            margin-top: 41px;
+            margin-bottom: 16px;
+        }
+
+        &__list-text{
+            padding: 0;
+            margin-bottom: 41px;
+        }
+    } 
+    
 
 }
