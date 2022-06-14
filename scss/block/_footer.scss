@@ -1,0 +1,126 @@
+.footer {
+    background: #2C343E;
+    margin-top: 200px;
+    height: 120px;
+    max-width: 1280px;
+    
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 86px;
+    }
+    
+    &__logo-img {
+        margin-right: 103px;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__list-item {
+        list-style-type: none;
+    }
+    
+    &__list-link {
+        text-decoration: none;
+        font-family: 'Barlow';
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: #83888F;
+        margin-right: 33px;
+        
+        &:hover{
+            color: #FEFCF7;
+        }
+    }
+    
+    &__social-link {
+        margin-right: 24px;
+    }
+}
+
+.left {
+    
+    &__footer {
+        display: flex;
+        align-items: center;
+        padding-top: 47px;
+    }
+}
+.right {
+    
+    &__footer {
+        align-items: center;
+        padding-top: 47px;
+        padding-right: 86px;
+    }
+}
+
+@media only screen and(max-width: 1050px) {
+    
+    .footer{
+
+        height: 270px;
+        margin-left: 40px;
+        margin-right: 40px;
+        
+        &__items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    .left__footer{
+        display: block;
+    }
+
+    .footer__logo-img{
+        margin-bottom: 33px;
+    }
+}
+
+@media only screen and(max-width: 500px){
+
+    .footer{
+        margin: 0;
+        padding: 0;
+        height: 346px;
+        margin-left: 24px;
+        margin-right: 24px;
+
+        &__logo-img{
+            margin: 0 auto;
+            margin-bottom: 48px;
+        }
+
+        &__items{
+            
+            padding: 0;
+        }
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        &__list-item{
+            margin-bottom: 24px;
+            
+        }
+    }
+
+    .right__footer{
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 48px;
+    }
+}
