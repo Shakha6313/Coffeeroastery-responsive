@@ -90,10 +90,6 @@
 
 @media only screen and (max-width: 600px) {
 
-    button{
-        width: 0;
-    }
-
     .nav{
 
         &__bar {
@@ -112,6 +108,7 @@
             background-color: transparent;
             margin: 0;
             padding: 0;
+            width: 0;
 
             &__list-x-img {
                 display: none;
