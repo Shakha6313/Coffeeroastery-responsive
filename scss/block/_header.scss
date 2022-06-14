@@ -88,6 +88,39 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
-    
+@media only screen and (max-width: 600px) {
+
+    button{
+        width: 0;
+    }
+
+    .nav{
+
+        &__bar {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+		}
+
+        &__list{
+            display: none;
+        }
+
+        &__list-btn{
+            display: block;
+            justify-content: space-between;
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+
+            &__list-x-img {
+                display: none;
+            }
+
+            
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
 }

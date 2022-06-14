@@ -502,6 +502,35 @@ button:hover {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  button {
+    width: 0;
+  }
+  .nav__bar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav__list-btn {
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+  .nav__list-btn__list-x-img {
+    display: none;
+  }
+  .nav__list-btn:hover {
+    background-color: transparent;
+  }
+}
+
 .main__container {
   background-image: url(./../../img/mainpg-img.png);
   height: 600px;
@@ -925,7 +954,6 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
 .choice__list1 {
