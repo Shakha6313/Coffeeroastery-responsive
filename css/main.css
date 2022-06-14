@@ -1076,4 +1076,53 @@ button:hover {
     margin-bottom: 41px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .choice {
+    width: 327px;
+    padding: 0;
+    margin: 0;
+  }
+  .choice__heading {
+    width: 279px;
+    padding: 0;
+    margin-top: 64px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .choice__text {
+    width: 279px;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 24px 64px 24px;
+  }
+  .choice__list1 {
+    width: 279px;
+  }
+  .choice__list-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .choice__list-img1 {
+    margin: 74px 104px 56px 104px;
+  }
+  .choice__list-heading {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .choice__list-text {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 51px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
