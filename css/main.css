@@ -1045,6 +1045,7 @@ button:hover {
   .choice__list1 {
     width: 573px;
     padding: 0px;
+    margin-bottom: 21px;
   }
   .choice__list-info {
     width: 455px;
