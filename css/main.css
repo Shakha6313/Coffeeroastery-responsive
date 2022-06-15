@@ -1652,4 +1652,43 @@ button:hover {
     width: 327px;
   }
 }
+
+.quality__container {
+  background-color: #333D4B;
+  position: relative;
+  height: 474px;
+  border-radius: 10px;
+  margin-bottom: 168px;
+}
+
+.quality__info {
+  padding-top: 100px;
+  padding-left: 85px;
+}
+
+.quality__heading {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+
+.quality__text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  opacity: 0.8;
+  width: 540px;
+}
+
+.quality__img {
+  position: absolute;
+  top: -19%;
+  left: 60%;
+}
 /*# sourceMappingURL=main.css.map */
