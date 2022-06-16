@@ -503,6 +503,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .nav {
+    padding: 0;
+  }
   .nav__bar {
     margin: 0;
     padding: 0;
@@ -1968,5 +1971,363 @@ button:hover {
     line-height: 26px;
     color: #333D4B;
   }
+}
+
+.plan {
+  margin-bottom: 164px;
+}
+
+.plan__heading {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+
+.plan__text {
+  font-family: 'Barlow';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  width: 445px;
+}
+
+.plan .create__plan {
+  background-image: url(./../img/plan__coffee.png);
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 450px;
+  padding-top: 134px;
+  padding-left: 85px;
+  border-radius: 10px;
+}
+
+.plan__step {
+  background-color: #333D4B;
+  border-radius: 10px;
+  width: 1280px;
+  padding-top: 100px;
+  padding-bottom: 107px;
+  margin-bottom: 160px;
+}
+
+.plan__step-container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plan__step-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plan__step-item {
+  width: 380px;
+  padding-right: 95px;
+  padding-top: 98px;
+  position: relative;
+}
+
+.plan__step-item::before {
+  content: '';
+  background-color: #333D4B;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.plan__step-item::after {
+  content: '';
+  display: inline-block;
+  background-color: #FDD6BA;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 15.5px;
+}
+
+.plan__step-item:last-child::after {
+  display: none;
+}
+
+.plan__step-num {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FDD6BA;
+  margin-bottom: 38px;
+}
+
+.plan__step-heading {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #FEFCF7;
+  width: 255px;
+  margin-bottom: 42px;
+}
+
+.plan__step-text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
+
+.plan__choose-container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left__side {
+  width: 255px;
+  max-width: 100%;
+  margin-right: 125px;
+}
+
+.left__side-list {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+
+.left__side-item {
+  width: 255px;
+}
+
+.left__side-item:last-child {
+  padding: 0;
+}
+
+.left__side-list-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.4;
+  border-bottom: 1px solid rgba(131, 136, 143, 0.5);
+  padding: 24px 0;
+}
+
+.left__side-list-link:hover {
+  opacity: 0.6;
+}
+
+.left__side-list-link:active {
+  opacity: 1;
+  color: #333D4B;
+}
+
+.list__num {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+  margin-right: 28.5px;
+}
+
+.list__text {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+}
+
+.num__active {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0E8784;
+}
+
+.right__side {
+  max-width: 730px;
+  width: 100%;
+}
+
+.plan__r-item {
+  margin-bottom: 88px;
+}
+
+.plan__r-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.plan__r-heading {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #83888F;
+}
+
+.plan__r-btn {
+  outline: none;
+  border: none;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.plan__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plan__label {
+  display: block;
+  max-width: 228px;
+  width: 100%;
+  margin-right: 23px;
+}
+
+.plan__label:last-child {
+  margin-right: 0;
+}
+
+.plan__input {
+  display: none;
+}
+
+.plan__input:checked + .plan__input-span {
+  background-color: #0E8784;
+  color: #FEFCF7;
+}
+
+.plan__input .plan__span-heading {
+  color: #FFF;
+}
+
+.plan__input-span {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #F4F1EB;
+  color: #333D4B;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plan__input-span:hover {
+  background-color: #FDD6BA;
+  color: #333D4B;
+}
+
+.plan__span-heading {
+  display: block;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: inherit;
+  padding-top: 32px;
+  padding-left: 28px;
+  margin-bottom: 24px;
+}
+
+.plan__span-text {
+  display: block;
+  color: inherit;
+  padding-top: 24px;
+  padding-left: 28px;
+  margin-bottom: 84px;
+}
+
+.order__summary {
+  background-color: #333D4B;
+  padding: 27px 64px;
+  border-radius: 10px;
+  margin-bottom: 160px;
+  position: relative;
+}
+
+.order__heading {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+
+.order__text {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.order__color {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #0E8784;
+}
+
+.plan__creator-btn {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FEFCF7;
+  padding: 15px 35.5px;
+  position: absolute;
+  top: 120%;
+  left: 68%;
 }
 /*# sourceMappingURL=main.css.map */
