@@ -1396,6 +1396,7 @@ button:hover {
     height: 270px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 72px;
   }
   .footer__items {
     display: -webkit-box;
@@ -1424,6 +1425,7 @@ button:hover {
     height: 346px;
     margin-left: 24px;
     margin-right: 24px;
+    margin-bottom: 72px;
   }
   .footer__logo-img {
     margin: 0 auto;
