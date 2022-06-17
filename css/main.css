@@ -2062,8 +2062,10 @@ button {
   }
   .plan .create__plan {
     background-image: url(./../../img/plan__coffee-mobile.png);
+    background-position: center;
     -o-object-fit: contain;
        object-fit: contain;
+    background-size: cover;
     height: 400px;
     padding-top: 127px;
     padding-left: 24px;
