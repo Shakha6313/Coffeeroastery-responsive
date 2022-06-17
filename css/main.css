@@ -2669,6 +2669,9 @@ button {
     max-width: 700px;
     width: 100%;
   }
+  .plan__choose-container {
+    padding: 0;
+  }
   .plan__r-item {
     margin-bottom: 100px;
   }
@@ -2855,7 +2858,7 @@ button {
   }
   .plan__creator-btn {
     position: relative;
-    left: -50px;
+    left: -68px;
   }
   .order__creator-info {
     width: 328px;

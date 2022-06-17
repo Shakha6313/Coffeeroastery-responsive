@@ -784,6 +784,10 @@
     
     .plan {
     
+        &__choose-container{
+            padding: 0;
+        }
+
         &__r-list {
         }
     
@@ -1014,7 +1018,7 @@
 
 		&__creator-btn {
             position: relative;
-            left: -50px;
+            left: -68px;
 		}
 }
 .order {
