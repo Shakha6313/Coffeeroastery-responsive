@@ -370,7 +370,7 @@ ol, ul, li {
 button {
   width: 217px;
   padding: 16px 31px;
-  background: #0E8784;
+  background-color: #0E8784;
   border-radius: 6px;
   outline: none;
   border: none;
@@ -380,10 +380,6 @@ button {
   line-height: 25px;
   color: #fff;
   cursor: pointer;
-}
-
-button:hover {
-  background: #66D2CF;
 }
 
 /* barlow-regular - latin */
@@ -2072,6 +2068,7 @@ button:hover {
     padding-top: 127px;
     padding-left: 24px;
     border-radius: 10px;
+    margin-bottom: 120px;
   }
 }
 
@@ -2171,7 +2168,7 @@ button:hover {
     width: 768px;
     padding-top: 97px;
     padding-bottom: 97px;
-    margin-bottom: 160px;
+    margin-bottom: 144px;
   }
   .plan__step-container {
     max-width: 768px;
@@ -2252,7 +2249,7 @@ button:hover {
     width: 768px;
     padding-top: 97px;
     padding-bottom: 97px;
-    margin-bottom: 160px;
+    margin-bottom: 144px;
   }
   .plan__step-container {
     max-width: 768px;
@@ -2611,33 +2608,37 @@ button:hover {
   color: inherit;
   padding-top: 24px;
   padding-left: 28px;
+  padding-right: 28px;
   margin-bottom: 84px;
-}
-
-.order__summary {
-  background-color: #333D4B;
-  padding: 27px 64px;
-  border-radius: 10px;
-  margin-bottom: 160px;
-  position: relative;
-}
-
-.order__heading {
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+}
+
+.order__summary {
+  margin-bottom: 168px;
+}
+
+.order__creator-info {
+  background-color: #333D4B;
+  border-radius: 10px;
+  padding: 27px 64px;
+  margin-bottom: 40px;
+}
+
+.order__heading {
+  font-family: 'Barlow';
+  line-height: 26px;
   text-transform: uppercase;
   color: #FFFFFF;
-  mix-blend-mode: normal;
   opacity: 0.5;
   margin-bottom: 8px;
 }
 
 .order__text {
   font-family: 'Fraunces';
-  font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 40px;
@@ -2645,24 +2646,234 @@ button:hover {
 }
 
 .order__color {
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 40px;
   color: #0E8784;
+  font-family: 'Fraunces';
+  font-weight: 900;
 }
 
 .plan__creator-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+
+@media only screen and (max-width: 1100px) {
+  .left__side {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .right__side {
+    max-width: 700px;
+    width: 100%;
+  }
+  .plan__r-item {
+    margin-bottom: 100px;
+  }
+  .plan__r-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 56px;
+  }
+  .plan__r-heading {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+  }
+  .plan__r-btn {
+    outline: none;
+    border: none;
+    background-color: #FFF;
+    cursor: pointer;
+    width: 100px;
+  }
+  .plan__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .plan__label {
+    display: block;
+    max-width: 228px;
+    width: 100%;
+    margin-right: 23px;
+  }
+  .plan__label:last-child {
+    margin-right: 0;
+  }
+  .plan__input {
+    display: none;
+  }
+  .plan__input:checked + .plan__input-span {
+    background-color: #0E8784;
+    color: #FEFCF7;
+  }
+  .plan__input .plan__span-heading {
+    color: #FFF;
+  }
+  .plan__input-span {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #F4F1EB;
+    color: #333D4B;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .plan__input-span:hover {
+    background-color: #FDD6BA;
+    color: #333D4B;
+  }
+  .plan__span-heading {
+    display: block;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: inherit;
+    padding-top: 32px;
+    padding-left: 28px;
+    margin-bottom: 24px;
+  }
+  .plan__span-text {
+    font-size: 16px;
+    line-height: 26px;
+    display: block;
+    color: inherit;
+    padding-top: 24px;
+    padding-left: 28px;
+    margin-bottom: 84px;
+  }
+  .plan__creator-btn {
+    position: relative;
+    right: 240px;
+  }
+}
+
+.order__summary {
+  margin-bottom: 168px;
+  position: relative;
+}
+
+.order__creator-info {
+  background-color: #333D4B;
+  border-radius: 10px;
+  padding: 27px 64px;
+  margin-bottom: 40px;
+}
+
+.order__heading {
+  font-family: 'Barlow';
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+
+.order__text {
   font-family: 'Fraunces';
-  font-style: normal;
   font-weight: 900;
-  font-size: 18px;
-  line-height: 25px;
-  color: #FEFCF7;
-  padding: 15px 35.5px;
-  position: absolute;
-  top: 120%;
-  left: 68%;
+  font-size: 24px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.order__color {
+  color: #0E8784;
+  font-family: 'Fraunces';
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+  .right {
+    margin: 0;
+    padding: 0;
+  }
+  .right__side {
+    max-width: 375px;
+    width: 100%;
+  }
+  .plan {
+    margin: 0;
+    padding: 0;
+  }
+  .plan__r-heading {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 28px;
+    width: 240px;
+  }
+  .plan__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .plan__label {
+    margin-bottom: 16px;
+    padding: 0;
+  }
+  .plan__input-span {
+    width: 328px;
+    padding: 0;
+  }
+  .plan__span-heading {
+    margin: 0;
+    margin-bottom: 8px;
+    padding-top: 24px;
+    padding-left: 25px;
+  }
+  .plan__span-text {
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+    margin-bottom: 24px;
+    width: 278px;
+  }
+  .plan__creator-btn {
+    position: relative;
+    left: -50px;
+  }
+  .order__creator-info {
+    width: 328px;
+    padding: 0;
+    margin: 0;
+  }
+  .order__heading {
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 32px;
+    padding-left: 25px;
+    margin-bottom: 8px;
+  }
+  .order__text {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 32px;
+    margin-bottom: 56px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

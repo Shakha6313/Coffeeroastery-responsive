@@ -26,7 +26,7 @@ ol, ul, li{
 button{
     width: 217px;
     padding: 16px 31px;
-    background: #0E8784;
+    background-color: #0E8784;
     border-radius: 6px;
     outline: none;
     border: none;
@@ -36,8 +36,4 @@ button{
     line-height: 25px;
     color: #fff;
     cursor: pointer;
-
-    &:hover{
-        background: #66D2CF;
-    }
 }
