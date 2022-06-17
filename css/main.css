@@ -382,6 +382,10 @@ button {
   cursor: pointer;
 }
 
+body {
+  position: relative;
+}
+
 /* barlow-regular - latin */
 @font-face {
   font-family: 'Barlow';
@@ -2880,5 +2884,90 @@ button {
     padding-bottom: 32px;
     margin-bottom: 56px;
   }
+}
+
+.plan__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan__modal--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plan__inner-modal {
+  max-width: 540px;
+  width: 100%;
+}
+
+.plan__modal-info {
+  padding: 56px;
+  background-color: #FFF;
+}
+
+.plan__modal-text {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #83888F;
+  margin-bottom: 8px;
+}
+
+.plan__modal-desc {
+  font-family: 'Barlow';
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+  opacity: 0.8;
+  margin-bottom: 47px;
+}
+
+.plan__modal-btm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plan__modal-price {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333D4B;
+}
+
+.modal__heading {
+  padding-top: 48px;
+  padding-bottom: 40px;
+  padding-left: 56px;
+  padding-right: 56px;
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFF;
+  background-color: #333D4B;
 }
 /*# sourceMappingURL=main.css.map */

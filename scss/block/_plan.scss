@@ -1056,3 +1056,91 @@
 }
 
 }
+
+//----------------------------------------
+
+
+.plan {
+
+    &__modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 99999;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__modal--active{
+        display: flex;
+    }
+
+    &__inner-modal {
+        max-width: 540px;
+        width: 100%;
+    }
+
+    &__modal-info {
+        padding: 56px;
+        background-color: #FFF;
+    }
+
+    &__modal-text {
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 40px;
+        color: #83888F;
+        margin-bottom: 8px;
+        
+    }
+
+    &__modal-desc {
+        font-family: 'Barlow';
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+        opacity: 0.8;
+        margin-bottom: 47px;
+    }
+
+    &__modal-btm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__modal-price {
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333D4B;
+    }
+
+    &__modal-btn {
+
+    }
+}
+.modal {
+
+    &__heading {
+        padding: {
+            top: 48px;
+            bottom: 40px;
+            left: 56px;
+            right: 56px;
+        }
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FFF;
+        background-color: #333D4B;
+    }
+}
